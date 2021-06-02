@@ -56,7 +56,7 @@ For that reason, if you want/must use WinHlp on Windows 10, a manual installatio
 
   You may receive an error message stating that a file doesn't exist. Don't worry - if it doesn't exist, this procedure is moot anyway.
 
-- Search for _WinHlp32.exe_ in the folders within the folder ```cab```. You'll find two copies of it in the "none" _(see below)_ folders. For a 64 bit system the one in the ```amd64_microsoft-windows-...``` folder is the relevant one.  
+- Search for _WinHlp32.exe_ in the folders within the folder ```cab```. You'll find two copies of it in the "none" _(see below)_ folders. For a 64 bit system the one in the _amd64\_microsoft-windows-..._ folder is the relevant one.  
 
   ![Subfolders in ```cab```](./gfx/1.jpg)
 
@@ -64,13 +64,13 @@ For that reason, if you want/must use WinHlp on Windows 10, a manual installatio
 
 - Copy the DLLs in the same folder as _WinHlp32.exe_ to the _Windows\System32_ directory.
 
-- Finally we need to copy the language resource files _(*.mui)_ to their respective folders. These are located in the respective ```amd64_microsoft-windows-...``` language folder _(see below)_.  
+- Finally we need to copy the language resource files _(*.mui)_ to their respective folders. These are located in the respective _amd64\_microsoft-windows-..._ language folder _(see below)_.  
 
   ![Location of _*.mui_ files](./gfx/2.jpg)
 
-  The relevant ones for my system are _de-de_ and _en-us_. Copy each _winhlp32.exe.mui_ to the respective folder in the _Windows_ directory, e.g. _winhlp32.exe.mui_ from the ```amd64_microsoft-windows-...de-de...``` folder goes to _Windows\de-DE_, _winhlp32.exe.mui_ from ```amd64_microsoft-windows-...en-us...``` to _Windows\en-US_
+  The relevant ones for my system are _de-de_ and _en-us_. Copy each _winhlp32.exe.mui_ to the respective folder in the _Windows_ directory, e.g. _winhlp32.exe.mui_ from the _amd64\_microsoft-windows-...de-de..._ folder goes to _Windows\de-DE_, _winhlp32.exe.mui_ from _amd64\_microsoft-windows-...en-us..._ to _Windows\en-US_.
 
-- Do the same for the _ftsrch.dll.mui_ files, **but** make sure to copy those to the language folders in _Windows\System32\_, e.g. _Windows\System32\de-DE_.  
+- Do the same for the _ftsrch.dll.mui_ files, **but** make sure to copy those to the language folders in _Windows\\**System32**_, e.g. _Windows\System32\de-DE_.  
 
 That's it! You now should be able to open these old _*.hlp_ files again.
 
