@@ -54,6 +54,12 @@ For that reason, if you want/must use WinHlp on Windows 10, a manual installatio
   icacls "%WINDIR%\System32\de-DE\ftsrch.dll.mui" /grant *S-1-5-32-544:F
   ```
 
+  _(Copy the below line to execute all commands at once)_
+  
+  ```bat
+  takeown /f "%WINDIR%\de-DE\WinHlp32.exe.mui" /a & takeown /f "%WINDIR%\en-US\WinHlp32.exe.mui" /a & takeown /f "%WINDIR%\System32\de-DE\ftsrch.dll.mui" /a & icacls "%WINDIR%\de-DE\WinHlp32.exe.mui" /grant *S-1-5-32-544:F & icacls "%WINDIR%\en-US\WinHlp32.exe.mui" /grant *S-1-5-32-544:F & icacls "%WINDIR%\System32\de-DE\ftsrch.dll.mui" /grant *S-1-5-32-544:F
+  ```
+
   You may receive an error message stating that a file doesn't exist. Don't worry - if it doesn't exist, this procedure is moot anyway.
 
 - Search for _WinHlp32.exe_ in the folders within the folder ```cab```. You'll find two copies of it in the "none" _(see below)_ folders. For a 64 bit system the one in the _amd64\_microsoft-windows-..._ folder is the relevant one.  
