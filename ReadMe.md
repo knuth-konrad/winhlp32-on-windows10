@@ -14,7 +14,7 @@ For that reason, if you want/must use WinHlp on Windows 10, a manual installatio
 
 - Log into your machine with an account that has administrative privilegues.
 
-- Download the file [Windows8.1-KB917607-x64.msu](https://www.microsoft.com/de-de/download/) (KB817607) to a folder of your choice, e.g. ```WinHlp```. We use this and the following folder names as examples further on. If you name your folders differently, make sure to replace them in the below commands accordingly. _Since this keeps resetting with every bianual Windows update, it is a good idea to store it in a permanent location._
+- Download the file [Windows8.1-KB917607-x64.msu](https://www.microsoft.com/de-de/download/details.aspx?id=47671) (KB817607) to a folder of your choice, e.g. ```WinHlp```. We use this and the following folder names as examples further on. If you name your folders differently, make sure to replace them in the below commands accordingly. _Since this keeps resetting with every bianual Windows update, it is a good idea to store it in a permanent location._
 
 - Create a (temporary) subfolder in the folder you created above, e.g. ```expanded```.
 
